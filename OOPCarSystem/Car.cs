@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPCarSystem
 {
+    //Task 1
     public class Car
     {
         public string Brand { get; set; }
@@ -22,10 +23,18 @@ namespace OOPCarSystem
             Mileage = mileage;
         }
 
+        //Task 2
         public void Drive(int kilometers)
         {
             Mileage += kilometers;
             Console.WriteLine($"Car {Brand} {Model} has driven {kilometers} km. Total mileage: {Mileage} km.");
+        }
+
+
+        //Task 3
+        public void ShowCarInfo()
+        {
+            Console.WriteLine($"Car Info: Brand - {Brand}, Model - {Model}, Year - {Year}, Mileage - {Mileage}");
         }
     }
 }
